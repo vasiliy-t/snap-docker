@@ -23,6 +23,7 @@ ADD ${CI_URL}/snap/${SNAP_VERSION}/linux/x86_64/snaptel  /opt/snap/bin/snaptel
 
 ADD https://github.com/intelsdi-x/snap-plugin-collector-cpu/releases/download/7/snap-plugin-collector-cpu_linux_x86_64 /opt/snap/plugins/
 ADD https://github.com/intelsdi-x/snap-plugin-publisher-influxdb/releases/download/25/snap-plugin-publisher-influxdb_linux_x86_64 /opt/snap/plugins/
+ADD https://github.com/intelsdi-x/snap-plugin-collector-docker/releases/download/9/snap-plugin-collector-docker_linux_x86_64 /opt/snap/plugins/
 
 COPY init_snap /usr/local/bin/init_snap
 COPY snapteld.conf /etc/snap/snapteld.conf
